@@ -1,0 +1,24 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Packaging / distribution
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Downloaded books (see the corpus example in the README)
+books/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+
+# Local tool settings
+.claude/settings.local.json

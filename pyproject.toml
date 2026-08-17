@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-gutenberg-reader"
+version = "0.1.0"
+description = "Download and clean Project Gutenberg books."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "quentin-lauret", email = "quentinlauretp@gmail.com" }]
+dependencies = [
+    "pandas>=1.5",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
